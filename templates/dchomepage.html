@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>droidCop | Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="icon" href="static/dClogo.png" />
+    <link rel="stylesheet" href="static/droidCop.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="w-full h-screen" style="background-image: url('static/BG920.png')">
+      <img
+        src="static/dna.png"
+        style="position: absolute; right: 0px; bottom: 0px; z-index: 0"
+      />
+      <nav class="flex items-start justify-between flex-row p-6">
+        <div class="flex-row items-start flex-shrink-0 text-white mr-6">
+          <span class="droidCop">droidCop</span>
+          <img
+            src="static/MumbaiPoliceLogo.png"
+            style="
+              margin-top: 10px;
+              display: inline-block;
+              position: absolute;
+              right: 50px;
+              height: 7%;
+            "
+          />
+          <p class="tagline">An initiative towards faster forensics</p>
+        </div>
+      </nav>
+      <hr />
+
+      <div class="flex items-start justify-between flex-col p-6">
+        <p class="login">LOGIN</p>
+        <form method="post" autocomplete="off">
+          {{ form.hidden_tag() }}
+          {{ form.email(autocomplete="nope",class="signin") }}
+<!--          <input type="email" class="signin" id="email" placeholder="E-mail" />-->
+
+          <div class="password-container">
+<!--            <input-->
+<!--              type="password"-->
+<!--              class="signin"-->
+<!--              id="password"-->
+<!--              name="password"-->
+<!--              placeholder="Password"-->
+<!--            />-->{{ form.password(class_="signin") }}
+
+            <a id="toggle-password"
+              ><span class="psk-icon" id="closed-eye"
+                ><i class="uil uil-eye-slash"></i
+              ></span>
+              <span class="psk-icon hide" id="open-eye"
+                ><i class="uil uil-eye"></i></span
+            ></a>
+          </div>
+<!--          <button type = "submit" class="loginbutton">Login</button>-->
+          {{ form.submit(class_="loginbutton") }}
+        </form>
+      </div>
+    </div>
+    <footer
+      class="flex items-start justify-between flex-row p-6"
+      style="background-color: #03050d"
+    >
+      <div class="flex items-start justify-between flex-col p-6">
+        <span class="arr">All rights reserved by</span>
+        <span class="et108">ET108</span>
+      </div>
+      <div>
+        <img src="static/dClogo.png" style="height: 3rem; margin-top: 65px" />
+      </div>
+      <div>
+        <img
+          src="static/VITLogoWhite.png"
+          style="height: 3.8rem; margin-top: 55px; padding-right: 20px"
+          alt=""
+        />
+      </div>
+    </footer>
+    <script src="static/toggle.js"></script>
+  </body>
+</html>

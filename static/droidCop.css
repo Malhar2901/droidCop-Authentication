@@ -1,0 +1,290 @@
+.droidCop {
+  font-family: "Orbitron", sans-serif;
+  font-size: 30px;
+  font-weight: 100;
+  color: #66fcf1;
+  padding-left: 50px;
+}
+.tagline {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  color: white;
+  text-transform: uppercase;
+  font-variant-caps: small-caps;
+  font-variant-caps: small-caps;
+  letter-spacing: 0.35em;
+  margin-top: 9px;
+  padding-left: 50px;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+  border-color: #66fcf1;
+}
+
+.login {
+  font-family: "Orbitron", sans-serif;
+  font-size: 35px;
+  font-weight: 100;
+  color: white;
+  padding-left: 100px;
+  padding-top: 80px;
+  margin-bottom: 50px;
+}
+
+.signin {
+  margin-left: 100px;
+  margin-top: 40px;
+  border-width: 2px;
+  border-radius: 3px;
+  border-color: white;
+  background-color: transparent;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 7%;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  color: white;
+  width: 500px;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.signin:is(:focus){
+  outline: none;
+  border-width: 2px;
+  border-color: #66fcf1;
+}
+
+::placeholder {
+  font-size: 17px;
+}
+
+.loginbutton {
+  background-color: #66fcf1 !important;
+  color: #000208;
+  border-radius: 3px;
+  font-size: 22px;
+  font-weight: 450;
+  font-family: "Orbitron", sans-serif;
+  margin-top: 70px;
+  margin-left: 100px;
+  width: 500px;
+  letter-spacing: 7%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 2px;
+  transition: background-color 0.2s opacity 0.15s;
+}
+.loginbutton:hover {
+  background-color: white !important;
+  color: #000208;
+}
+.loginbutton:active {
+  opacity: 0.9;
+  box-shadow: 0px 0px 3px 3px rgb(255, 255, 255);
+}
+
+.darkbutton {
+  border-color: #66fcf1;
+  color: #66fcf1;
+  border-width: 2px;
+  border-radius: 3px;
+  font-size: 22px;
+  font-weight: 450;
+  font-family: "Orbitron", sans-serif;
+  margin-top: 30px;
+  width: 500px;
+  letter-spacing: 7%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 2px;
+  transition: background-color 0.2s opacity 0.15s;
+}
+.darkbutton:hover {
+  background-color: #66fcf1;
+  color: #000208;
+}
+.darkbutton:active {
+  background-color: white;
+  opacity: 0.9;
+  color: #000208;
+  border-color: white;
+  box-shadow: 0px 0px 3px 3px rgb(255, 255, 255);
+}
+.bluebutton {
+  background-color: #66fcf1;
+  color: 000208;
+  font-size: 22px;
+  border-radius: 3px;
+  font-weight: 450;
+  font-family: "Orbitron", sans-serif;
+  margin-top: 30px;
+  width: 500px;
+  letter-spacing: 7%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 2px;
+  transition: background-color 0.2s opacity 0.15s;
+}
+.bluebutton:hover {
+  background-color: white;
+  color: #000208;
+}
+.bluebutton:active {
+  opacity: 0.9;
+  box-shadow: 0px 0px 3px 3px rgb(255, 255, 255);
+}
+.evidence {
+  font-family: "Orbitron", sans-serif;
+  font-size: 35px;
+  font-weight: 100;
+  color: white;
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+.operation {
+  color: white;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.parabold {
+  font-weight: bold;
+}
+.dcpara {
+  font-family: "Orbitron", sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  color: #66fcf1;
+}
+.arr {
+  color: #afafaf;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 7%;
+  font-size: 12px;
+  display: block;
+  padding-left: 20px;
+  margin-top: 40px;
+}
+.et108 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 17px;
+  color: #66fcf1;
+  display: block;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+body {
+  overflow: auto;
+}
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+.tooltip {
+  font-family: Roboto;
+  font-weight: 500;
+  position: absolute;
+  top: 67px;
+  right: 3.75px;
+  background-color: #66fcf1;
+  color: #000208;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  margin-bottom: 50px;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+
+.tooltip:hover {
+  background-color: white;
+  color: #000208;
+}
+
+img.dp:hover {
+  border-radius: 32.5px;
+  border-width: 2px;
+  border-color: #66fcf1;
+}
+.dpbutton {
+  position: absolute;
+  right: 50px;
+  width: 65px;
+}
+
+.dpbuttonclick {
+  position: absolute;
+  top: 15px;
+  right: 50px;
+  width: 60px;
+}
+
+.password-container input [type="password"],
+.password-container input [type="text"] {
+  margin-left: 100px;
+  margin-top: 40px;
+  border-width: 2px;
+  border-color: white;
+  background-color: transparent;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 7%;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  color: white;
+  width: 500px;
+  display: block;
+}
+
+.password-container {
+  width: 500px;
+  position: relative;
+}
+
+.uil-eye-slash {
+  position: absolute;
+  top: 14px;
+  right: -75px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.uil-eye {
+  position: absolute;
+  top: 14px;
+  right: -75px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.color {
+color: #66fcf1 !important;
+}
+

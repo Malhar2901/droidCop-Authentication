@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>droidCop | Operations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="static/dClogo.png" />
+    <link rel="stylesheet" href="static/droidCop.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="w-full h-screen" style="background-image: url('static/BG920.png')">
+      <nav class="flex items-start justify-between flex-row p-6">
+        <div class="flex-row items-start flex-shrink-0 text-white mr-6">
+          <span class="droidCop">droidCop</span>
+          <button class="dpbutton" id="dp" style="display: inline-block">
+            <img class="dp" src="static/dpmksa.png" />
+              <div class="tooltip" id="tooltip">Logout</div>
+          </button>
+
+          <p class="tagline">An initiative towards faster forensics</p>
+        </div>
+      </nav>
+      <hr />
+
+      <div class="flex items-center justify-between flex-col p-6" id="element">
+        <p class="evidence">How to scan for evidence</p>
+        <p class="operation">
+          To record a video of evidence, place the <br />
+          <span class="dcpara">droidCop</span> facing towards it and click
+          <br />
+          <span class="parabold">Start Recording</span><br />
+          <br />
+          Once finished, please click
+          <span class="parabold">Stop Recording</span> <br />
+          <br />
+          To view, click on <span class="parabold">View on Cloud Server</span>
+        </p>
+        <button id="startbutton" class="bluebutton">Start Recording</button>
+        <button class="darkbutton" id="again">Start Recording Again</button>
+        <button class="bluebutton" id="cloud">
+          <a
+            target="_blank"
+            href="https://drive.google.com/drive/folders/1MJx8CkSegoPxJRZlZXWQw3lzCpQE9p_I?usp=share_link"
+          >
+            View on Cloud Server
+          </a>
+        </button>
+      </div>
+    </div>
+    <footer
+      class="flex items-start justify-between flex-row p-6"
+      style="background-color: #03050d"
+    >
+      <div class="flex items-start justify-between flex-col p-6">
+        <span class="arr">All rights reserved by</span>
+        <span class="et108">ET108</span>
+      </div>
+      <div>
+        <img
+          src="static/dClogo.png"
+          style="height: 3rem; margin-top: 65px; margin-left: 150px"
+        />
+      </div>
+
+      <div>
+        <div>
+          <img
+            src="static/MumbaiPoliceLogo.png"
+            style="
+              margin-top: 55px;
+              height: 4rem;
+              display: inline-block;
+              padding-right: 80px;
+            "
+          />
+
+          <img
+            src="static/VITLogoWhite.png"
+            style="
+              height: 3.8rem;
+              margin-top: 55px;
+              padding-right: 20px;
+              display: inline-block;
+            "
+            alt=""
+          />
+        </div>
+      </div>
+    </footer>
+    <script src="static/index.js"></script>
+  </body>
+</html>
