@@ -5,8 +5,11 @@ let cloud = document.querySelector("#cloud");
 let startbutton = document.querySelector('#startbutton');
 let dp = document.querySelector('#dp');
 let tooltip = document.querySelector('#tooltip');
+let record = document.querySelector('#rec');
 element.removeChild(cloud)
 element.removeChild(again)
+element.removeChild(record)
+
 tooltip.addEventListener('click', logout_user)
 dp.addEventListener('click', showlogout)
 function showlogout(){
@@ -31,6 +34,7 @@ function changeStuff(){
 startbutton.classList.remove("bluebutton")
 startbutton.classList.add("darkbutton")
 startbutton.innerHTML="Stop Recording"
+element.appendChild(record)
 let stopbutton = startbutton;
 stopbutton.addEventListener('click', twobuttons)
 }
@@ -40,11 +44,13 @@ function twobuttons(){
   element.removeChild(startbutton)
   element.appendChild(again)
   element.appendChild(cloud)
+  element.removeChild(record)
   again.addEventListener('click', startrecording)
 }
 function startrecording(){
   element.removeChild(again)
   element.removeChild(cloud)
+  element.appendChild(record)
   element.appendChild(startbutton)
 }
 
