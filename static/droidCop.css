@@ -67,7 +67,7 @@ hr {
 }
 
 .loginbutton {
-  background-color: #66fcf1;
+  background-color: #66fcf1 !important;
   color: #000208;
   border-radius: 3px;
   font-size: 22px;
@@ -83,7 +83,7 @@ hr {
   transition: background-color 0.2s opacity 0.15s;
 }
 .loginbutton:hover {
-  background-color: white;
+  background-color: white !important;
   color: #000208;
 }
 .loginbutton:active {
